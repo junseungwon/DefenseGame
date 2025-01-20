@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
@@ -32,33 +33,50 @@ public class Bullet : MonoBehaviour
         if (!isShoot) return;
 
         //물체가 없거나 물체가 비활성화 되어 있는지 확인하기
-        if (monster != null||monster.activeSelf == false)
+        if (monster != null && monster.activeSelf == true)
         {
             // 목표 방향 계산
-            Vector3 direction = (monster.transform.position - transform.position).normalized;
+            Vector3 direction = (monster.transform.position - transform.position);
 
             // 유도탄 이동
-            transform.position += direction * speed * Time.deltaTime;
+            transform.position += Normalized(direction) * speed * Time.deltaTime;
         }
         else
         {
-            Debug.Log("물체가 사라짐");
             //목표가 사라지면 비활성화
             isShoot = false;
              this.gameObject.SetActive(false);
         }
     }
+    private float epsilon = 0.01f; // 0 근사치 기준
+
+    private Vector3 Normalized(Vector3 vector)
+    {
+        return new Vector3(ConvertToUnit(vector.x),
+                           ConvertToUnit(vector.y),
+                           ConvertToUnit(vector.z));
+    }
+
+    private float ConvertToUnit(float value)
+    {
+        if (value > epsilon)
+            return 1f;
+        else if (value < -epsilon)
+            return -1f;
+        else
+            return 0f;
+    }
 
 
-    //몬스터와 충돌 시
+    //몬스터와 충돌 감지
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Monster")
+        if (other.gameObject.layer == 7)
         {
-            Debug.Log("적중하였습니다.");
-
             //변수 초기화 및 물체 비활성화
             isShoot = false;
+            transform.localPosition = Vector3.zero;
+            monster.GetComponent<Monster>().GetDamaged(damage);
             this.gameObject.SetActive(false);
         }
     }

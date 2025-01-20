@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monsterCodeName: 1
   monsterName: 
-  monsterHp: 3
-  moveSpeed: 1
+  monsterHp: 100
+  moveSpeed: 20

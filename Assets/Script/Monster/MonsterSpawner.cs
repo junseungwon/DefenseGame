@@ -16,11 +16,24 @@ public class MonsterSpawner : MonoBehaviour
     //제외할 숫자들
     private List<int> excludedNumbers = new List<int>();
 
-    private int num = 0;
+    private int pickNum = 0;
 
     private void Start()
     {
+        //1분마다 몬스터 웨이브를 실행한다.
+        StartCoroutine(CoolWave());
+    }
 
+    //1분이 지나고 다시 웨이브 시작함
+    private IEnumerator CoolWave()
+    {
+        while (waveCount < 2)
+        {
+            StartCoroutine(StartMonsterWave());
+            yield return new WaitForSeconds(15f);
+            waveCount++;
+        }
+        Debug.Log("최종웨이브 종료");
     }
 
     //코루틴 몬스터 생성하기
@@ -38,16 +51,26 @@ public class MonsterSpawner : MonoBehaviour
                 excludedNumbers.Add(i);
             }
         }
-        
+
         //0.1초마다 몬스터가 생성된다.
         while (true)
         {
             //특정 숫자를 제외한 나머지 물체를 소환한다.
-            SpawnerMonster(GenerateRandomNumber(1, 4));
+            pickNum = GenerateRandomNumber(0, 3);
 
-            yield return new WaitForSeconds(0.1f);
+            if (pickNum == -1) { Debug.Log("몬스터가 모두 소진되었습니다."); break; }
+
+            //몬스터를 소환
+            SpawnerMonster(pickNum);
+
+            yield return new WaitForSeconds(1f);
         }
+
+        Debug.Log("웨이브가 종료되었습니다.");
+
     }
+
+    //특정숫자를 제외하고 숫자를 뽑는다.
     private int GenerateRandomNumber(int min, int max)
     {
         List<int> validNumbers = new List<int>();
@@ -65,7 +88,7 @@ public class MonsterSpawner : MonoBehaviour
         if (validNumbers.Count == 0)
         {
             Debug.LogWarning("No valid numbers available to choose from.");
-            return 0; // 또는 다른 기본값
+            return -1; // 또는 다른 기본값
         }
 
         // 랜덤으로 숫자 선택
@@ -81,17 +104,17 @@ public class MonsterSpawner : MonoBehaviour
         //몬스터를 활성화만 시키면 될듯 
         switch (num)
         {
-            case 1:
+            case 0:
                 // 각 웨이브당 최대 웨이브 숫자 - 현재 몬스터의 남은 카운트를 빼면 그 몬스터를 사용하면 될듯
                 monsterGameObject.monster1[maxCount - waves[waveCount].monsterWaveInforms[0]].SetActive(true);
                 break;
-            case 2:
+            case 1:
                 monsterGameObject.monster2[maxCount - waves[waveCount].monsterWaveInforms[1]].SetActive(true);
                 break;
-            case 3:
+            case 2:
                 monsterGameObject.monster3[maxCount - waves[waveCount].monsterWaveInforms[2]].SetActive(true);
                 break;
-            case 4:
+            case 3:
                 monsterGameObject.bossMonster.SetActive(true);
                 break;
             default:
