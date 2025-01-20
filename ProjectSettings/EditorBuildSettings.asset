@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/LDJ/Map_base.unity
+    guid: 58fa27030889dde4bb795b109f15f710
   m_configObjects: {}
