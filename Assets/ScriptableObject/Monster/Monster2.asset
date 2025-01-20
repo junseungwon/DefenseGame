@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b1fb55597c1094e87ddd4ba7b9eb20, type: 3}
   m_Name: Monster2
   m_EditorClassIdentifier: 
-  monsterCodeName: 0
+  monsterCodeName: 2
   monsterName: 
-  monsterHp: 0
-  damage: 0
-  moveSpeed: 0
+  monsterHp: 200
+  moveSpeed: 15
