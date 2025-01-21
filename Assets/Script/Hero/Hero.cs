@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Hero : MonoBehaviour
@@ -18,14 +19,50 @@ public class Hero : MonoBehaviour
     private bool isCool = true;
 
     private IEnumerator corutineCoolTimer = null;
+    private IEnumerator corutineMoveTimer = null;
+    private bool isMove = false;
 
     private int bulletCount = 0;
 
     //물체 감지를 시작
     private void Update()
     {
-        DetectMonster();
     }
+    private void FixedUpdate()
+    {
+        DetectMonster();
+
+    }
+
+    public void MoveArea(Vector3 movePos)
+    {
+        if (this.gameObject.activeSelf == false)
+        {
+            return;
+        }
+        //실행된 코루틴이 있으면 취소하기
+        if (corutineMoveTimer != null)
+        {
+            StopCoroutine(corutineMoveTimer);
+        }
+        corutineMoveTimer = CorutineMoveArea(movePos);
+        StartCoroutine(corutineMoveTimer);
+    }
+
+    private IEnumerator CorutineMoveArea(Vector3 movePos)
+    {
+        float dis = 0f;
+
+        //해당 장소로 이동할 때까지 반복한다.
+        while (dis <= 0)
+        {
+            Vector3 direction = (movePos - transform.position).normalized;
+            direction.y = 0;
+            transform.localPosition += direction * heroData.MoveSpeed * Time.deltaTime;
+            yield return new WaitForSeconds(0.01f);
+        }
+    }
+    //쿨타임
 
     //쿨타임 발생
     private void StartCoolTimer()
@@ -51,13 +88,12 @@ public class Hero : MonoBehaviour
 
         isCool = true;
     }
-  
+
     private void OnTriggerEnter(Collider other)
     {
         // 다른 Collider가 트리거에 들어올 때 리스트에 추가
         if (!detectedColliders.Contains(other) && other.gameObject.layer == 7)
         {
-            Debug.Log("감지");
             detectedColliders.Add(other);
         }
     }
@@ -75,9 +111,9 @@ public class Hero : MonoBehaviour
     private void DetectMonster()
     {
         //쿨타임 및 물체가 없는 경우 종료
-        if (isCool&& detectedColliders.Count == 0) return;
+        if (!isCool || detectedColliders.Count == 0) return;
 
-        GameObject minObj =CalculateMinDistanceColliders();
+        GameObject minObj = CalculateMinDistanceColliders();
 
         //쿨타임 및 활성화시에만 쿨타임 돌림
         if (isCool && this.gameObject.activeSelf == true) StartCoolTimer();

@@ -7,30 +7,49 @@ public class MonsterSpawner : MonoBehaviour
     //웨이브별로 나눈다.
     //배열로 해서 몬스터들 몬스터 
     public MonsterWave[] waves = new MonsterWave[60];
+
+    //현재 웨이브 수
     public int waveCount = 0;
 
     //각자 배열로 몬스터를 가지고 있는다?
-    public MonsterGameObject monsterGameObject = null;
-    //각웨이브당 최대 10마리
-    private int maxCount = 10;
+    private MonsterGameObject monsterGameObject = new MonsterGameObject();
+
+    //몬스터들이 저장된 부모 parent
+    [SerializeField]
+    private GameObject monsterParent = null;
+
     //제외할 숫자들
     private List<int> excludedNumbers = new List<int>();
 
+    //각웨이브당 최대 10마리
+    private int maxCount = 10;
+
+    //랜덤으로 뽑은 숫자
     private int pickNum = 0;
+
+
+    private void Awake()
+    {
+        GameManager.instance.monsterSpawner = this;
+        //사전작업 몬스터 que에 삽입한다.
+        MonsterSetting();
+    }
 
     private void Start()
     {
         //1분마다 몬스터 웨이브를 실행한다.
         StartCoroutine(CoolWave());
+        Time.timeScale =4f;
     }
 
     //1분이 지나고 다시 웨이브 시작함
     private IEnumerator CoolWave()
     {
-        while (waveCount < 2)
+        while (waveCount < 4)
         {
             StartCoroutine(StartMonsterWave());
-            yield return new WaitForSeconds(15f);
+            yield return new WaitForSeconds(50f);
+            Debug.Log("새로운 웨이브가 시작됩니다.");
             waveCount++;
         }
         Debug.Log("최종웨이브 종료");
@@ -65,9 +84,7 @@ public class MonsterSpawner : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
         }
-
         Debug.Log("웨이브가 종료되었습니다.");
-
     }
 
     //특정숫자를 제외하고 숫자를 뽑는다.
@@ -106,16 +123,16 @@ public class MonsterSpawner : MonoBehaviour
         {
             case 0:
                 // 각 웨이브당 최대 웨이브 숫자 - 현재 몬스터의 남은 카운트를 빼면 그 몬스터를 사용하면 될듯
-                monsterGameObject.monster1[maxCount - waves[waveCount].monsterWaveInforms[0]].SetActive(true);
+                DequeMonster(monsterGameObject.monster1, 0);
                 break;
             case 1:
-                monsterGameObject.monster2[maxCount - waves[waveCount].monsterWaveInforms[1]].SetActive(true);
+                DequeMonster(monsterGameObject.monster2, 0);
                 break;
             case 2:
-                monsterGameObject.monster3[maxCount - waves[waveCount].monsterWaveInforms[2]].SetActive(true);
+                DequeMonster(monsterGameObject.monster3, 0);
                 break;
             case 3:
-                monsterGameObject.bossMonster.SetActive(true);
+                monsterGameObject.monster4.SetActive(true);
                 break;
             default:
                 Debug.Log("알 수 없는 몬스터입니다.");
@@ -129,11 +146,67 @@ public class MonsterSpawner : MonoBehaviour
         if (waves[waveCount].monsterWaveInforms[num] == 0) excludedNumbers.Add(num);
     }
 
+    //몬스터가 부족한지 확인하고 부족하면 생성한다.
+    private void DequeMonster(Queue<GameObject> que,int num)
+    {
+        //만약 que에 몬스터가 없으면 생성하고 que에 넣음
+        if (que.Count == 0)
+        {
+            GameObject obj = Instantiate(monsterParent.transform.GetChild(num).gameObject);
+
+            //자식순서랑 코드네임은 0 시작과 1시작이 달라서 +1 추가한다.
+            ReInputMonster(obj, num+1);
+        };
+        //몬스터를 꺼내서 활성화
+        que.Dequeue().SetActive(true);
+    }
     //쿨타임 이후에 다음 웨이브 실행
     private IEnumerator CorutineNextWave()
     {
         yield return null;
         StartMonsterWave();
+    }
+
+    //초반 몬스터 전체 저장
+    private void MonsterSetting()
+    {
+        //몬스터 1번을 1번 que에 저장
+        MonsterInsert(0, monsterGameObject.monster1);
+        MonsterInsert(1, monsterGameObject.monster2);
+        MonsterInsert(2, monsterGameObject.monster3);
+        monsterGameObject.monster4 = monsterParent.transform.GetChild(3).gameObject;
+    }
+
+    //que에 몬스터를 삽입
+    private void MonsterInsert(int childNum, Queue<GameObject> que)
+    {
+        for (int i = 0; i < monsterParent.transform.GetChild(childNum).childCount; i++)
+        {
+            que.Enqueue(monsterParent.transform.GetChild(childNum).GetChild(i).gameObject);
+        }
+    }
+    //몬스터가 죽거나 외부요인으로 소멸할 경우 다시 que에 삽입
+    public void ReInputMonster(GameObject obj, int codeName)
+    {
+        switch (codeName)
+        {
+            case 1:
+                monsterGameObject.monster1.Enqueue(obj);
+                break;
+            case 2:
+                monsterGameObject.monster2.Enqueue(obj);
+                break;
+            case 3:
+                monsterGameObject.monster3.Enqueue(obj);
+                break;
+            case 4:
+                Debug.Log("보스 죽음");
+                break;
+            default:
+                Debug.LogError($"알 수 없는 몬스터가 죽음 코드네임은 {codeName} 입니다");
+                break;
+        }
+
     }
 }
 
@@ -146,12 +219,12 @@ public class MonsterWave
 public class MonsterGameObject
 {
     [Header("몬스터 1")]
-    public GameObject[] monster1 = new GameObject[10];
+    public Queue<GameObject> monster1 = new Queue<GameObject>();
     [Header("몬스터 2")]
-    public GameObject[] monster2 = new GameObject[10];
+    public Queue<GameObject> monster2 = new Queue<GameObject>();
     [Header("몬스터 3")]
-    public GameObject[] monster3 = new GameObject[10];
+    public Queue<GameObject> monster3 = new Queue<GameObject>();
     [Header("보스몬스터")]
-    public GameObject bossMonster = null;
+    public GameObject monster4 = null;
 }
 

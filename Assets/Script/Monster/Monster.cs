@@ -34,14 +34,13 @@ public class Monster : MonoBehaviour
     public void GetDamaged(float num)
     {
         Hp -= num;
-        Debug.Log(Hp);
     }
 
-    //비활성화 및 위치 초기화
+    //비활성화 및 위치 초기화, 다시 que에 삽입
     private void Dead()
     {
-        Debug.Log("죽음");
-        transform.localPosition = new Vector3(-6, 0, 0);
+        transform.localPosition = new Vector3(2.5f, 0, 0);
+        GameManager.instance.monsterSpawner.ReInputMonster(this.gameObject, monsterData.MonsterCodeName);
         gameObject.SetActive(false);
     }
 }

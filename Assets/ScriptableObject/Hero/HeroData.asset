@@ -16,5 +16,5 @@ MonoBehaviour:
   heroName: 
   moveSpeed: 1
   damage: 1
-  coolTime: 1
+  coolTime: 0.2
   rank: 1
