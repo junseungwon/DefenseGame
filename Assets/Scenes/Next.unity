@@ -1263,9 +1263,9 @@ MonoBehaviour:
   - monsterWaveInforms: 00000000000000000000000000000000
   - monsterWaveInforms: 00000000000000000000000000000000
   - monsterWaveInforms: 00000000000000000000000000000000
-  - monsterWaveInforms: 00000000000000000000000000000000
-  - monsterWaveInforms: 00000000000000000000000000000000
-  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000050000000f00000000000000
+  - monsterWaveInforms: 0a000000000000000a00000000000000
+  - monsterWaveInforms: 00000000000000000000000001000000
   waveCount: 0
   monsterParent: {fileID: 1008341158}
 --- !u!1 &153938957
@@ -14608,7 +14608,7 @@ MonoBehaviour:
   unitSpawner: {fileID: 0}
   uIManager: {fileID: 0}
   unitRank: 000000000000000000000000
-  gold: 1
+  gold: 10000
 --- !u!1001 &1783427085
 PrefabInstance:
   m_ObjectHideFlags: 0
