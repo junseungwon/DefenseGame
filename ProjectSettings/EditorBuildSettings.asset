@@ -6,12 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/LDJ/Map_base.unity
-    guid: 58fa27030889dde4bb795b109f15f710
-  - enabled: 1
     path: Assets/Scenes/main.unity
     guid: a79bd3bbc7ae45a4484bafa96fa1240f
   - enabled: 1
-    path: Assets/Scenes/sdy-test2.unity
-    guid: cd9af192c3053a640a0e7cd863096fa5
+    path: Assets/Scenes/Next.unity
+    guid: 0622eda95c5bc8148aeb2bbe428645bc
   m_configObjects: {}
