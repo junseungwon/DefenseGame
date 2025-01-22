@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -107,16 +108,18 @@ public class ScenesManager : MonoBehaviour
     }
 
     // 게임 종료 메서드 추가
-    public void QuitGame()
+    public void QuitGame(Action action)
     {
-        StartCoroutine(QuitGameWithFade());
+        StartCoroutine(QuitGameWithFade(action));
     }
 
-    private IEnumerator QuitGameWithFade()
+    private IEnumerator QuitGameWithFade(Action action)
     {
         // 페이드 아웃
         yield return StartCoroutine(Fade(0f, 1f));
 
+        action();
+        yield return new WaitForSeconds(10.0f);
         // 게임 종료
         #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;

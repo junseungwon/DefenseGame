@@ -7,7 +7,6 @@
 
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 [RequireComponent(typeof(RectTransform))]
 public class SelectManager : MonoBehaviour
@@ -33,6 +32,7 @@ public class SelectManager : MonoBehaviour
     private Vector3 movePos = Vector3.zero;
     private void Awake()
     {
+        Time.timeScale = 1f;
         //This assumes that the manager is placed on the image used to select
         if (!SelectingBoxRect)
         {
@@ -41,11 +41,13 @@ public class SelectManager : MonoBehaviour
         //Searches for all of the objects with the selectable character script
         //Then converts to list
         SelectableCharacter[] chars = FindObjectsOfType<SelectableCharacter>();
-        selectableChars.Add(chars[0]);
-        for (int i = 1; i <= (chars.Length - 1); i++)
+        for (int i = 0; i <= (chars.Length - 1); i++)
         {
             selectableChars.Add(chars[i]);
-            chars[i].transform.parent.parent.gameObject.SetActive(false);
+            if (chars[i].transform.parent.parent.gameObject.name != "FirstHero")
+            {
+                chars[i].transform.parent.parent.gameObject.SetActive(false);
+            }
         }
     }
     public void AddObject(SelectableCharacter sobj)
@@ -77,7 +79,7 @@ public class SelectManager : MonoBehaviour
                     if (movePos.x > 2.0f) movePos.x = 2.0f;
                     if (movePos.x < -2.0f) movePos.x = -2.0f;
                     if (movePos.z > 2.0f) movePos.z = 2.0f;
-                    if (movePos.z <- 2.0f) movePos.z = -2.0f;
+                    if (movePos.z < -2.0f) movePos.z = -2.0f;
                     //해당되는 위치로 이동시킨다.
                     foreach (SelectableCharacter selectableCharacter in selectedArmy)
                     {
@@ -103,8 +105,8 @@ public class SelectManager : MonoBehaviour
         {
             selectTimer = 0f;
         }
-        
-        
+
+
         selecting = Input.GetMouseButton(0);
 
         if (selecting)

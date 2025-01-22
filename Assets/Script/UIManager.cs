@@ -21,9 +21,15 @@ public class UIManager : MonoBehaviour
     private TextMeshProUGUI goldText = null;
 
     [SerializeField]
+    private TextMeshProUGUI monsterCountText = null;
+
+    [SerializeField]
     private Image timerBar = null;
 
     public GameObject[] winLoseObj = new GameObject[2];
+    [SerializeField]
+    private Button timeButton = null;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -38,18 +44,20 @@ public class UIManager : MonoBehaviour
     private void StartSetting()
     {
         instanceButton.onClick.AddListener(() => InstanceHero());
+        timeButton.onClick.AddListener(() => Changetime());
     }
 
     // Update is called once per frame
     void Update()
     {
         UpdateGold();
+        UpdateCount();
     }
     //영웅 소환 버튼
     public void InstanceHero()
     {
         //소환 버튼을 누르면 20골드가 소모가 되고 소환되는 유닛은 랜덤이다.
-        if(GameManager.instance.gold > 20)
+        if (GameManager.instance.gold > 20)
         {
             GameManager.instance.gold -= 20;
             int randomIndex = Random.Range(0, 3);
@@ -79,20 +87,49 @@ public class UIManager : MonoBehaviour
     {
         StartCoroutine(CorutineNextWaveTimer());
     }
-    
+
     //0.1초마다 시간 타이머가 줄어든다.
     private IEnumerator CorutineNextWaveTimer()
     {
-        while (timerBar.fillAmount > 0)
+        float elapsedTime = 0f;
+        float startFillAmount = 1f;
+
+        while (elapsedTime < 60)
         {
-            timerBar.fillAmount -= 0.1f / 60;
-            yield return new WaitForSeconds(0.1f);
+            // 경과 시간에 비례하여 fillAmount를 조절
+            float t = elapsedTime / 60;
+            timerBar.fillAmount = Mathf.Lerp(startFillAmount, 0f, t);
+
+            elapsedTime += Time.deltaTime;
+            yield return null; // 다음 프레임까지 대기
         }
         timerBar.fillAmount = 1f;
+
     }
     //골드 실시간 업데이트
     public void UpdateGold()
     {
         goldText.text = GameManager.instance.gold.ToString();
+    }
+    public void UpdateCount()
+    {
+        monsterCountText.text = GameManager.instance.monsterSpawner.monsterCount.ToString();
+    }
+
+    private int timeC = 1;
+    //배속 변경하기
+    public void Changetime()
+    {
+        if (timeC >= 4)
+        {
+            timeC = 1;
+            timeButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "x"+timeC.ToString();
+        }
+        else
+        {
+            timeC += 1;
+            timeButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "x"+timeC.ToString();
+        }
+        Time.timeScale = timeC;
     }
 }

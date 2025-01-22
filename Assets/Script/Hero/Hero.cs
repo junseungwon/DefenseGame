@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using TMPro;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Hero : MonoBehaviour
 {
@@ -120,6 +122,11 @@ public class Hero : MonoBehaviour
 
         //총알을 활성화 시킨다.
         bullet[bulletCount].SetActive(true);
+
+        // 오브젝트가 타겟을 바라보도록 회전합니다.
+        transform.LookAt(minObj.transform.position);
+        transform.localRotation = Quaternion.Euler(0, transform.localRotation.y + 90f, 0);
+       // transform.localRotation = Quaternion.Euler(transform.localRotation.x, 0, transform.localRotation.z);
 
         //총알에 값을 세팅해준다.
         //데미지가 기본 데미지에서 기본데미지에서 + 증가율 (기본 데미지*랭크) 10+ 10(1)

@@ -39,13 +39,13 @@ public class Monster : MonoBehaviour
     {
         transform.localPosition = new Vector3(2.5f, 0, 0);
         GameManager.instance.gold += monsterData.Gold;
-        if (GameManager.instance.monsterSpawner.waveCount == 1)
+        if (GameManager.instance.monsterSpawner.monsterCount == 1)
         {
-            GameManager.instance.monsterSpawner.waveCount = 0;
+            GameManager.instance.monsterSpawner.monsterCount = 0;
         }
         else
         {
-            GameManager.instance.monsterSpawner.waveCount -= 1;
+            GameManager.instance.monsterSpawner.monsterCount -= 1;
         }
         GameManager.instance.monsterSpawner.ReInputMonster(this.gameObject, monsterData.MonsterCodeName);
         gameObject.SetActive(false);

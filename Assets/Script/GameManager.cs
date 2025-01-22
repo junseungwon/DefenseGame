@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public SelectManager selectManager = null;
     
     public int[] unitRank = new int[3];
-    public int gold = 100000;
+    public int gold = 100;
 
     public void UnitRankSetting()
     {
