@@ -15,6 +15,6 @@ MonoBehaviour:
   heroCodeName: 1
   heroName: 
   moveSpeed: 1
-  damage: 10
+  damage: 100
   coolTime: 0.2
   rank: 1

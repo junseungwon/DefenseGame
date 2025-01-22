@@ -94,7 +94,6 @@ public class MonsterSpawner : MonoBehaviour
             pickNum = GenerateRandomNumber(0, 3);
 
             if (pickNum == -1) { Debug.Log("몬스터가 모두 소진되었습니다."); break; }
-
             //몬스터를 소환
             SpawnerMonster(pickNum);
 
