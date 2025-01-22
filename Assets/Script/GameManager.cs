@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public MonsterSpawner monsterSpawner = null;
     public UnitSpawner unitSpawner = null;
     public UIManager uIManager = null;
+    public SelectManager selectManager = null;
     
     public int[] unitRank = new int[3];
     public int gold = 100000;

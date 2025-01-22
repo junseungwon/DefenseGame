@@ -37,7 +37,6 @@ public class SelectManager : MonoBehaviour
         {
             SelectingBoxRect = GetComponent<RectTransform>();
         }
-
         //Searches for all of the objects with the selectable character script
         //Then converts to list
         SelectableCharacter[] chars = FindObjectsOfType<SelectableCharacter>();

@@ -42,6 +42,7 @@ public class Monster : MonoBehaviour
     {
         transform.localPosition = new Vector3(2.5f, 0, 0);
         GameManager.instance.gold += monsterData.Gold;
+       
         GameManager.instance.monsterSpawner.ReInputMonster(this.gameObject, monsterData.MonsterCodeName);
         gameObject.SetActive(false);
     }
