@@ -35,10 +35,6 @@ public class UIManager : MonoBehaviour
     //초반 세팅
     private void StartSetting()
     {
-        for (int i = 0; i < upGradeBt.Length; i++)
-        {
-            upGradeBt[i].onClick.AddListener(() => UpGradeUnitButton(i));
-        }
         instanceButton.onClick.AddListener(() => InstanceHero());
     }
 
@@ -71,7 +67,7 @@ public class UIManager : MonoBehaviour
         //소모되는 골드가 100포인트 이상일 때 100을 차감하고 랭크를 1 상승 시킨다.
         if (GameManager.instance.gold > 1)
         {
-            GameManager.instance.gold -= 100;
+            GameManager.instance.gold -= 1;
             GameManager.instance.unitRank[num] += 1;
         }
     }

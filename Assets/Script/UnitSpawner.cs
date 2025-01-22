@@ -10,28 +10,11 @@ public class UnitSpawner : MonoBehaviour
     [SerializeField]
     private GameObject unitParent = null;
 
-    //제외할 숫자들
-    private List<int> excludedNumbers = new List<int>();
-
-    //랜덤으로 뽑은 숫자
-    private int pickNum = 0;
-
-
     //유닛 초기세팅
     private void Awake()
     {
         GameManager.instance.unitSpawner = this;
         UnitSetting();
-
-    }
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
     //몬스터 생성하기
