@@ -60,6 +60,7 @@ public class SelectManager : MonoBehaviour
         {
             SelectingStart = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
             SelectingBoxRect.anchoredPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+
             //selecting이 되어있는 상태에서 안에 움직일 몹들이 있을경우
             if (!selecting && selectedArmy.Count > 0)
             {
@@ -68,6 +69,10 @@ public class SelectManager : MonoBehaviour
                 if (Physics.Raycast(selectCam.ScreenPointToRay(Input.mousePosition), out hit, int.MaxValue))
                 {
                     movePos = hit.point;
+                    if (movePos.x > 2.0f) movePos.x = 2.0f;
+                    if (movePos.x < -2.0f) movePos.x = -2.0f;
+                    if (movePos.z > 2.0f) movePos.z = 2.0f;
+                    if (movePos.z <- 2.0f) movePos.z = -2.0f;
                     //해당되는 위치로 이동시킨다.
                     foreach (SelectableCharacter selectableCharacter in selectedArmy)
                     {

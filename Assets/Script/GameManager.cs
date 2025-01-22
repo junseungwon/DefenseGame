@@ -12,4 +12,5 @@ public class GameManager : MonoBehaviour
 
 
     public MonsterSpawner monsterSpawner = null;
+    public int[] unitRank = new int[3];
 }
