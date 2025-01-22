@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -236,6 +240,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -257,6 +265,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -319,6 +331,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -488,6 +504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -509,6 +529,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1140,66 +1164,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - monsterWaveInforms: 0a000000000000000000000000000000
-  - monsterWaveInforms: 0b000000000000000000000000000000
-  - monsterWaveInforms: 0c000000000000000000000000000000
-  - monsterWaveInforms: 0d000000000000000000000000000000
-  - monsterWaveInforms: 0e000000000000000000000000000000
-  - monsterWaveInforms: 0f000000000000000000000000000000
-  - monsterWaveInforms: 10000000000000000000000000000000
-  - monsterWaveInforms: 11000000000000000000000000000000
-  - monsterWaveInforms: 12000000000000000000000000000000
-  - monsterWaveInforms: 13000000000000000000000000000000
-  - monsterWaveInforms: 14000000000000000000000000000000
-  - monsterWaveInforms: 000000000a0000000000000000000000
-  - monsterWaveInforms: 000000000b0000000000000000000000
-  - monsterWaveInforms: 000000000c0000000000000000000000
-  - monsterWaveInforms: 000000000d0000000000000000000000
-  - monsterWaveInforms: 000000000e0000000000000000000000
-  - monsterWaveInforms: 000000000f0000000000000000000000
-  - monsterWaveInforms: 00000000100000000000000000000000
-  - monsterWaveInforms: 00000000110000000000000000000000
-  - monsterWaveInforms: 00000000120000000000000000000000
-  - monsterWaveInforms: 00000000130000000000000000000000
-  - monsterWaveInforms: 0a0000000a0000000000000000000000
-  - monsterWaveInforms: 0c0000000a0000000000000000000000
-  - monsterWaveInforms: 0e0000000a0000000000000000000000
-  - monsterWaveInforms: 100000000a0000000000000000000000
-  - monsterWaveInforms: 120000000a0000000000000000000000
-  - monsterWaveInforms: 140000000a0000000000000000000000
-  - monsterWaveInforms: 0a0000000c0000000000000000000000
-  - monsterWaveInforms: 0a0000000e0000000000000000000000
-  - monsterWaveInforms: 0a000000100000000000000000000000
-  - monsterWaveInforms: 0a000000120000000000000000000000
-  - monsterWaveInforms: 000000000a0000000a00000000000000
-  - monsterWaveInforms: 000000000c0000000a00000000000000
-  - monsterWaveInforms: 000000000e0000000a00000000000000
-  - monsterWaveInforms: 00000000100000000a00000000000000
-  - monsterWaveInforms: 00000000120000000a00000000000000
-  - monsterWaveInforms: 000000000a0000000c00000000000000
-  - monsterWaveInforms: 000000000a0000000e00000000000000
-  - monsterWaveInforms: 000000000a0000001000000000000000
-  - monsterWaveInforms: 000000000a0000001200000000000000
-  - monsterWaveInforms: 000000000a0000001400000000000000
-  - monsterWaveInforms: 0a0000000a0000000a00000000000000
-  - monsterWaveInforms: 0b0000000a0000000b00000000000000
-  - monsterWaveInforms: 0c0000000a0000000c00000000000000
-  - monsterWaveInforms: 0e0000000a0000000e00000000000000
-  - monsterWaveInforms: 0a0000000c0000000c00000000000000
-  - monsterWaveInforms: 0a0000000e0000000e00000000000000
-  - monsterWaveInforms: 0a000000100000001000000000000000
-  - monsterWaveInforms: 0a000000120000001200000000000000
-  - monsterWaveInforms: 0a000000140000001400000000000000
-  - monsterWaveInforms: 0c0000000c0000000c00000000000000
-  - monsterWaveInforms: 0d0000000d0000000d0000000d000000
-  - monsterWaveInforms: 0e0000000e0000000e00000000000000
-  - monsterWaveInforms: 0f0000000f0000000f00000000000000
-  - monsterWaveInforms: 10000000100000001000000000000000
-  - monsterWaveInforms: 11000000110000001100000000000000
-  - monsterWaveInforms: 12000000120000001200000000000000
-  - monsterWaveInforms: 13000000130000001300000000000000
-  - monsterWaveInforms: 14000000140000001400000000000000
-  - monsterWaveInforms: 14000000140000001400000001000000
+  - monsterWaveInforms: 0a000000050000000000000000000000
+  - monsterWaveInforms: 020000000a0000000000000000000000
+  - monsterWaveInforms: 02000000050000000300000000000000
+  - monsterWaveInforms: 05000000030000000000000000000000
+  - monsterWaveInforms: 04000000000000000200000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000000000000000000000000000
+  - monsterWaveInforms: 00000000050000000f00000000000000
+  - monsterWaveInforms: 0a000000000000000a00000000000000
+  - monsterWaveInforms: 00000000000000000000000001000000
   waveCount: 0
   monsterParent: {fileID: 1008341158}
 --- !u!1 &153938957
@@ -1650,6 +1674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -1773,6 +1801,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2026,6 +2058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -2220,6 +2256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -2322,6 +2362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2367,6 +2411,142 @@ Transform:
   - {fileID: 1216604108}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &270190530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270190531}
+  - component: {fileID: 270190533}
+  - component: {fileID: 270190532}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &270190531
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270190530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1269168756}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &270190532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270190530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Win
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &270190533
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270190530}
+  m_CullTransparentMesh: 1
 --- !u!1 &285988776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3474014895507824714, guid: 3e4b0ebf6edeefb4d90c639e6b027b65, type: 3}
@@ -2454,6 +2634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2515,6 +2699,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2838,6 +3026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2925,6 +3117,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (69)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3027,6 +3223,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3442,6 +3642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -3543,6 +3747,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3813,6 +4021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -3915,6 +4127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4003,6 +4219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -4064,6 +4284,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4269,6 +4493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4418,6 +4646,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4813,6 +5045,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -4929,6 +5165,142 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6918494207651582338, guid: a827b3bdf4adcb642916f6872fd69cf6, type: 3}
   m_PrefabInstance: {fileID: 591308209}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &603403862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603403863}
+  - component: {fileID: 603403865}
+  - component: {fileID: 603403864}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &603403863
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603403862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 643008597}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &603403864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603403862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Win
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &603403865
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603403862}
+  m_CullTransparentMesh: 1
 --- !u!1001 &604237669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5105,6 +5477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5193,6 +5569,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -5243,6 +5623,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
   m_PrefabInstance: {fileID: 629589752}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &643008596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 643008597}
+  - component: {fileID: 643008599}
+  - component: {fileID: 643008598}
+  m_Layer: 5
+  m_Name: Win
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &643008597
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643008596}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 603403863}
+  m_Father: {fileID: 1398097869}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &643008598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643008596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &643008599
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643008596}
+  m_CullTransparentMesh: 1
 --- !u!1001 &645764051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5294,6 +5750,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5418,6 +5878,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5680,6 +6144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -5741,6 +6209,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5870,6 +6342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -5932,6 +6408,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -5993,6 +6473,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6096,6 +6580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6157,6 +6645,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6247,6 +6739,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6381,6 +6877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -6442,6 +6942,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6571,6 +7075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -6699,6 +7207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -6760,6 +7272,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6863,6 +7379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6925,6 +7445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6984,12 +7508,12 @@ MonoBehaviour:
   - {fileID: 659438795}
   - {fileID: 2031561098}
   instanceButton: {fileID: 182961332}
-  instancePos: {fileID: 0}
+  instancePos: {fileID: 1142448556}
   goldText: {fileID: 126285517}
   timerBar: {fileID: 1249679221}
   winLoseObj:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 643008596}
+  - {fileID: 1269168755}
 --- !u!1001 &819179775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7108,6 +7632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7129,6 +7657,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7320,6 +7852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -7488,6 +8024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7576,6 +8116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -7637,6 +8181,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7934,6 +8482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7955,6 +8507,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8285,6 +8841,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8656,6 +9216,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8779,6 +9343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -8880,6 +9448,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9008,6 +9580,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9265,6 +9841,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9450,6 +10030,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9698,6 +10282,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10030,6 +10618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10348,6 +10940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10410,6 +11006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10471,6 +11071,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10801,6 +11405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -10978,6 +11586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11039,6 +11651,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11112,6 +11728,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1615034344097896854, guid: da5b3aa031e850f448f07c1c679abe2b, type: 3}
   m_PrefabInstance: {fileID: 1266912464}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1269168755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1269168756}
+  - component: {fileID: 1269168758}
+  - component: {fileID: 1269168757}
+  m_Layer: 5
+  m_Name: Lose
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1269168756
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269168755}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 270190531}
+  m_Father: {fileID: 1398097869}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1269168757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269168755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1269168758
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269168755}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1282505388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11123,6 +11815,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11248,6 +11944,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -11350,6 +12050,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11437,6 +12141,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11540,6 +12248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11561,6 +12273,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11663,6 +12379,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11818,6 +12538,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -11920,6 +12644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12007,6 +12735,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12160,6 +12892,8 @@ RectTransform:
   - {fileID: 2031561095}
   - {fileID: 552735240}
   - {fileID: 126285516}
+  - {fileID: 643008597}
+  - {fileID: 1269168756}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -12265,6 +12999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12327,6 +13065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12348,6 +13090,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12707,6 +13453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -12809,6 +13559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12896,6 +13650,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13183,6 +13941,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13762,6 +14524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -13864,6 +14630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13925,6 +14695,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14054,6 +14828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14075,6 +14853,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14204,6 +14986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -14265,6 +15051,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14518,6 +15308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -14579,6 +15373,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14704,6 +15502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -14765,6 +15567,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14828,6 +15634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -14889,6 +15699,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14992,6 +15806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15063,6 +15881,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15165,6 +15987,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15346,6 +16172,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (41)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15634,6 +16464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -15695,6 +16529,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15863,6 +16701,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16289,6 +17131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -16391,6 +17237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16412,6 +17262,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (65)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16580,6 +17434,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16841,6 +17699,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17328,6 +18190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -17390,6 +18256,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -17451,6 +18321,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17779,6 +18653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -17840,6 +18718,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18043,6 +18925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18105,6 +18991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 1 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18126,6 +19016,10 @@ PrefabInstance:
     - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_Name
       value: Monster2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18317,6 +19211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -18480,6 +19378,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18763,6 +19665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster2
       objectReference: {fileID: 0}
+    - target: {fileID: 3257319093668079157, guid: 865c372f64285074abee98103a394efa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8497102772718375733, guid: 865c372f64285074abee98103a394efa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.5
@@ -19043,6 +19949,10 @@ PrefabInstance:
     - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
       propertyPath: m_Name
       value: Monster 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1635035409164775401, guid: 59800e998c195ff4491d6162ec6030f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
