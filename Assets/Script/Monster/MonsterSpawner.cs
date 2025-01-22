@@ -27,6 +27,7 @@ public class MonsterSpawner : MonoBehaviour
     //랜덤으로 뽑은 숫자
     private int pickNum = 0;
 
+    private float nextWaveTime = 60.0f;
 
     private void Awake()
     {
@@ -39,7 +40,7 @@ public class MonsterSpawner : MonoBehaviour
     {
         //1분마다 몬스터 웨이브를 실행한다.
         StartCoroutine(CoolWave());
-        Time.timeScale =4f;
+        //Time.timeScale =4f;
     }
 
     //1분이 지나고 다시 웨이브 시작함
@@ -48,7 +49,8 @@ public class MonsterSpawner : MonoBehaviour
         while (waveCount < 4)
         {
             StartCoroutine(StartMonsterWave());
-            yield return new WaitForSeconds(50f);
+            GameManager.instance.uIManager.UpdateTimeBar();
+            yield return new WaitForSeconds(nextWaveTime);
             Debug.Log("새로운 웨이브가 시작됩니다.");
             waveCount++;
         }
@@ -126,10 +128,10 @@ public class MonsterSpawner : MonoBehaviour
                 DequeMonster(monsterGameObject.monster1, 0);
                 break;
             case 1:
-                DequeMonster(monsterGameObject.monster2, 0);
+                DequeMonster(monsterGameObject.monster2, 1);
                 break;
             case 2:
-                DequeMonster(monsterGameObject.monster3, 0);
+                DequeMonster(monsterGameObject.monster3, 2);
                 break;
             case 3:
                 monsterGameObject.monster4.SetActive(true);

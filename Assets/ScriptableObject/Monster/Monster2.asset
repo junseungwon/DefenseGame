@@ -16,3 +16,4 @@ MonoBehaviour:
   monsterName: 
   monsterHp: 200
   moveSpeed: 15
+  gold: 2

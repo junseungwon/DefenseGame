@@ -22,6 +22,12 @@ public class MonsterData : ScriptableObject
     [SerializeField]
     private float moveSpeed;
     public float MoveSpeed { get { return moveSpeed; } }
+
+    //죽으면 얻는 골드 소모량
+    [SerializeField]
+    private int gold;
+    public int Gold { get { return gold; } }
+
 }
 
 //몬스터 개별 내용

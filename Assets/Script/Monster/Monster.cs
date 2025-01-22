@@ -33,6 +33,7 @@ public class Monster : MonoBehaviour
     //외부 공격으로부터 데미지를 받음
     public void GetDamaged(float num)
     {
+        Debug.Log(Hp + "가 남았습니다.");
         Hp -= num;
     }
 
@@ -40,6 +41,7 @@ public class Monster : MonoBehaviour
     private void Dead()
     {
         transform.localPosition = new Vector3(2.5f, 0, 0);
+        GameManager.instance.gold += monsterData.Gold;
         GameManager.instance.monsterSpawner.ReInputMonster(this.gameObject, monsterData.MonsterCodeName);
         gameObject.SetActive(false);
     }
