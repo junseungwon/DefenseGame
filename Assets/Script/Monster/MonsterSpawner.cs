@@ -28,31 +28,45 @@ public class MonsterSpawner : MonoBehaviour
     private int pickNum = 0;
 
     private float nextWaveTime = 60.0f;
+    private int monsterCount = 0;
 
+    private GameStateEnum gameState = GameStateEnum.Win;
     private void Awake()
     {
         GameManager.instance.monsterSpawner = this;
         //사전작업 몬스터 que에 삽입한다.
         MonsterSetting();
     }
-
+    private enum GameStateEnum
+    {
+        Win, Lose
+    }
     private void Start()
     {
         //1분마다 몬스터 웨이브를 실행한다.
         StartCoroutine(CoolWave());
         //Time.timeScale =4f;
     }
-
     //1분이 지나고 다시 웨이브 시작함
     private IEnumerator CoolWave()
     {
-        while (waveCount < 4)
+        while (waveCount < 60 || gameState == GameStateEnum.Lose)
         {
             StartCoroutine(StartMonsterWave());
             GameManager.instance.uIManager.UpdateTimeBar();
             yield return new WaitForSeconds(nextWaveTime);
             Debug.Log("새로운 웨이브가 시작됩니다.");
             waveCount++;
+        }
+        //패배
+        if (GameStateEnum.Lose == gameState)
+        {
+            GameManager.instance.uIManager.winLoseObj[1].SetActive(true);
+        }
+        //승리 
+        else if (GameStateEnum.Win == gameState)
+        {
+            GameManager.instance.uIManager.winLoseObj[0].SetActive(true);
         }
         Debug.Log("최종웨이브 종료");
     }
@@ -146,10 +160,18 @@ public class MonsterSpawner : MonoBehaviour
 
         //남은 수량이 0이라면 해당 몬스터를 제외 목록에 추가한다.
         if (waves[waveCount].monsterWaveInforms[num] == 0) excludedNumbers.Add(num);
+
+        waveCount++;
+        //100마리가 넘으면 종료
+        if (waveCount >= 100)
+        {
+            gameState = GameStateEnum.Lose;
+            waveCount = 0;
+        }
     }
 
     //몬스터가 부족한지 확인하고 부족하면 생성한다.
-    private void DequeMonster(Queue<GameObject> que,int num)
+    private void DequeMonster(Queue<GameObject> que, int num)
     {
         //만약 que에 몬스터가 없으면 생성하고 que에 넣음
         if (que.Count == 0)
@@ -157,7 +179,7 @@ public class MonsterSpawner : MonoBehaviour
             GameObject obj = Instantiate(monsterParent.transform.GetChild(num).gameObject);
 
             //자식순서랑 코드네임은 0 시작과 1시작이 달라서 +1 추가한다.
-            ReInputMonster(obj, num+1);
+            ReInputMonster(obj, num + 1);
         };
         //몬스터를 꺼내서 활성화
         que.Dequeue().SetActive(true);

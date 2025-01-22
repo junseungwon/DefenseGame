@@ -22,6 +22,8 @@ public class UIManager : MonoBehaviour
 
     [SerializeField]
     private Image timerBar = null;
+
+    public GameObject[] winLoseObj = new GameObject[2];
     // Start is called before the first frame update
     private void Awake()
     {

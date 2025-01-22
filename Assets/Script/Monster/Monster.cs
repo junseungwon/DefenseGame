@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class Monster : MonoBehaviour
 {
     public Transform target = null;
     public float speed = 30.0f;
-    
+
     [SerializeField]
     private MonsterData monsterData;
 
     private float hp = 100;
-    public float Hp {  get { return hp; } set { hp = value; if (hp <= 0) { Dead(); } } }
+    public float Hp { get { return hp; } set { hp = value; if (hp <= 0) { Dead(); } } }
 
     private void Awake()
     {
@@ -20,8 +17,8 @@ public class Monster : MonoBehaviour
     }
     private void Start()
     {
-       
-       hp = monsterData.MonsterHp;
+
+        hp = monsterData.MonsterHp;
     }
 
     void Update()
@@ -42,10 +39,16 @@ public class Monster : MonoBehaviour
     {
         transform.localPosition = new Vector3(2.5f, 0, 0);
         GameManager.instance.gold += monsterData.Gold;
-       
+        if (GameManager.instance.monsterSpawner.waveCount == 1)
+        {
+            GameManager.instance.monsterSpawner.waveCount = 0;
+        }
+        else
+        {
+            GameManager.instance.monsterSpawner.waveCount -= 1;
+        }
         GameManager.instance.monsterSpawner.ReInputMonster(this.gameObject, monsterData.MonsterCodeName);
         gameObject.SetActive(false);
     }
 }
 
- 

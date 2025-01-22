@@ -7,6 +7,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(RectTransform))]
 public class SelectManager : MonoBehaviour
@@ -40,12 +41,17 @@ public class SelectManager : MonoBehaviour
         //Searches for all of the objects with the selectable character script
         //Then converts to list
         SelectableCharacter[] chars = FindObjectsOfType<SelectableCharacter>();
-        for (int i = 0; i <= (chars.Length - 1); i++)
+        selectableChars.Add(chars[0]);
+        for (int i = 1; i <= (chars.Length - 1); i++)
         {
             selectableChars.Add(chars[i]);
+            chars[i].transform.parent.parent.gameObject.SetActive(false);
         }
     }
-
+    public void AddObject(SelectableCharacter sobj)
+    {
+        selectableChars.Add(sobj);
+    }
     void Update()
     {
 
