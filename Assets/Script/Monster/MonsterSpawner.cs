@@ -38,7 +38,7 @@ public class MonsterSpawner : MonoBehaviour
         GameManager.instance.monsterSpawner = this;
         //사전작업 몬스터 que에 삽입한다.
         MonsterSetting();
-        Time.timeScale = 10f;
+        Time.timeScale = 30f;
     }
     private enum GameStateEnum
     {
@@ -54,7 +54,7 @@ public class MonsterSpawner : MonoBehaviour
     private IEnumerator CoolWave()
     {
         
-        while (waveCount < 10 || gameState == GameStateEnum.Lose)
+        while (waveCount < 60 || gameState == GameStateEnum.Lose)
         {
             StartCoroutine(StartMonsterWave());
             GameManager.instance.uIManager.UpdateTimeBar();

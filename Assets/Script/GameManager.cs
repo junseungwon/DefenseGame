@@ -18,7 +18,10 @@ public class GameManager : MonoBehaviour
     
     public int[] unitRank = new int[3];
     public int gold = 100;
-
+    private void Start()
+    {
+        Time.timeScale = 10.0f;
+    }
     public void UnitRankSetting()
     {
         for (int i = 0; i < unitRank.Length; i++)
