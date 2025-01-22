@@ -52,7 +52,7 @@ public class MonsterSpawner : MonoBehaviour
     private IEnumerator CoolWave()
     {
         
-        while (waveCount < 3 || gameState == GameStateEnum.Lose)
+        while (waveCount < 60 || gameState == GameStateEnum.Lose)
         {
             StartCoroutine(StartMonsterWave());
             GameManager.instance.uIManager.UpdateTimeBar();
