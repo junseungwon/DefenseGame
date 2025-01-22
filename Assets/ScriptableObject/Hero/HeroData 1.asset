@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef832eb2e39237c47a2b70aacb87a7aa, type: 3}
   m_Name: HeroData 1
   m_EditorClassIdentifier: 
-  heroCodeName: 0
+  heroCodeName: 2
   heroName: 
-  moveSpeed: 0
-  damage: 0
-  rank: 0
+  moveSpeed: 1
+  damage: 20
+  coolTime: 0.2
+  rank: 1
