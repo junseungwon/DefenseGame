@@ -27,6 +27,31 @@ public class ScenesManager : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded; // 이벤트 구독 해제
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        StartCoroutine(PlayBGMWithDelay());
+    }
+
+    private IEnumerator PlayBGMWithDelay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        PlayBGM();
+    }
+
+    private void PlayBGM()
+    {
+        if (audioSource != null && BGMclip != null)
+        {
+            audioSource.clip = BGMclip;
+            audioSource.Play();
+        }
+    }
+
     public void LoadScene(string sceneName)
     {
         StartCoroutine(LoadSceneWithFade(sceneName));
@@ -34,6 +59,8 @@ public class ScenesManager : MonoBehaviour
 
     private IEnumerator LoadSceneWithFade(string sceneName)
     {
+        StopBGM();
+
         // 페이드 아웃
         yield return StartCoroutine(Fade(0f, 1f));
 
@@ -54,6 +81,14 @@ public class ScenesManager : MonoBehaviour
         yield return StartCoroutine(Fade(1f, 0f));
     }
 
+    private void StopBGM()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
+    }
+
     private IEnumerator Fade(float startAlpha, float endAlpha)
     {
         float elapsedTime = 0f;
@@ -69,5 +104,24 @@ public class ScenesManager : MonoBehaviour
 
         color.a = endAlpha;
         fadeImage.color = color;
+    }
+
+    // 게임 종료 메서드 추가
+    public void QuitGame()
+    {
+        StartCoroutine(QuitGameWithFade());
+    }
+
+    private IEnumerator QuitGameWithFade()
+    {
+        // 페이드 아웃
+        yield return StartCoroutine(Fade(0f, 1f));
+
+        // 게임 종료
+        #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+        #else
+            Application.Quit();
+        #endif
     }
 }
