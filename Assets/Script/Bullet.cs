@@ -6,12 +6,21 @@ using static UnityEngine.GraphicsBuffer;
 
 public class Bullet : MonoBehaviour
 {
+    // Ãß°¡µÈ Æø¹ß ÀÌÆåÆ® º¯¼ö
+    public GameObject bulletExplrosion;
+
     public float damage = 0f;
     public GameObject monster = null;
     public GameObject parent = null;
     public bool isShoot = false;
     public float speed = 1.0f;
     // Update is called once per frame
+
+    private void Start()
+    {
+        bulletExplrosion.SetActive(false);
+    }
+
     void Update()
     {
         FireShot();
@@ -78,6 +87,7 @@ public class Bullet : MonoBehaviour
             transform.localPosition = Vector3.zero;
             monster.GetComponent<Monster>().GetDamaged(damage);
             this.gameObject.SetActive(false);
+            bulletExplrosion.SetActive(true);
         }
     }
 }
