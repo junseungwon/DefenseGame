@@ -122,15 +122,14 @@ public class Hero : MonoBehaviour
         bullet[bulletCount].SetActive(true);
 
         //총알에 값을 세팅해준다.
-        bullet[bulletCount].GetComponent<Bullet>().Setting(10, minObj, 4.0f);
-
+        //데미지가 기본 데미지에서 기본데미지에서 + 증가율 (기본 데미지*랭크) 10+ 10(1)
+        bullet[bulletCount].GetComponent<Bullet>().Setting(heroData.Damage+(heroData.Damage * GameManager.instance.unitRank[heroData.HeroCodeName]), minObj, 4.0f);
 
         //다음 총알로 인계
         bulletCount++;
 
         //최대 총알이되면 리셋
         if (bulletCount >= 20) bulletCount = 0;
-
     }
 
     // 현재 감지된 Collider 목록에서 가장 가까운 물체를 찾는다.
@@ -164,4 +163,5 @@ public class Hero : MonoBehaviour
 
         }
     }
+
 }
