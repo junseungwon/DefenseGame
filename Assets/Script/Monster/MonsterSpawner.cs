@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Principal;
 using UnityEngine;
 
 public class MonsterSpawner : MonoBehaviour
@@ -37,6 +38,7 @@ public class MonsterSpawner : MonoBehaviour
         GameManager.instance.monsterSpawner = this;
         //사전작업 몬스터 que에 삽입한다.
         MonsterSetting();
+        Time.timeScale = 10f;
     }
     private enum GameStateEnum
     {
@@ -52,7 +54,7 @@ public class MonsterSpawner : MonoBehaviour
     private IEnumerator CoolWave()
     {
         
-        while (waveCount < 60 || gameState == GameStateEnum.Lose)
+        while (waveCount < 10 || gameState == GameStateEnum.Lose)
         {
             StartCoroutine(StartMonsterWave());
             GameManager.instance.uIManager.UpdateTimeBar();
