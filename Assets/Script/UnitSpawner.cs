@@ -69,7 +69,13 @@ public class UnitSpawner : MonoBehaviour
     {
         for (int i = 0; i < unitParent.transform.GetChild(childNum).childCount; i++)
         {
+            Debug.Log(unitParent.transform.GetChild(childNum).GetChild(i).gameObject);
+            unitParent.transform.GetChild(childNum).GetChild(i).gameObject.SetActive(true);
+            Debug.Log(unitParent.transform.GetChild(childNum).GetChild(i).GetChild(0).GetChild(0).gameObject.name);
+            GameManager.instance.selectManager.selectableChars.Add(unitParent.transform.GetChild(childNum).GetChild(i).GetChild(0).GetChild(0).GetComponent<SelectableCharacter>());
             que.Enqueue(unitParent.transform.GetChild(childNum).GetChild(i).gameObject);
+            unitParent.transform.GetChild(childNum).GetChild(i).gameObject.SetActive(false);
+            
         }
     }
 
