@@ -69,7 +69,7 @@ public class UIManager : MonoBehaviour
     public void UpGradeUnitButton(int num)
     {
         //소모되는 골드가 100포인트 이상일 때 100을 차감하고 랭크를 1 상승 시킨다.
-        if (GameManager.instance.gold > 100)
+        if (GameManager.instance.gold > 1)
         {
             GameManager.instance.gold -= 100;
             GameManager.instance.unitRank[num] += 1;
